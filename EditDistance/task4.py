@@ -76,10 +76,10 @@ def task4(dictionary, raw):
 
 	return distances
 
-# if __name__ == '__main__':
-# 	c = task4('test.txt', 'rawtest.txt')
-# 	t1 = time.time()
-# 	c = task4('dictionary.txt', 'raw.txt')
-# 	t2 = time.time()
-# 	print(c)
-# 	print(t2 - t1)
+if __name__ == '__main__':
+	c = task4('test.txt', 'rawtest.txt')
+	t1 = time.time()
+	c = task4('dictionary.txt', 'raw.txt')
+	t2 = time.time()
+	print(c)
+	print(t2 - t1)

@@ -21,13 +21,7 @@ yTest = np.genfromtxt(os.path.join(data_dir, 'yTest.csv'), delimiter=',')
 # plt.imshow(datapoint.reshape((28,28), order = 'F'), cmap='gray')
 # plt.show()
 
-# TODO: Test RBF_kernel function, defined in perceptron.py
-
-# TODO: Test kernel_perceptron_predict function, defined in perceptron.py
-
-# TODO: Test kernel_perceptron_train function, defined in perceptron.py
-
-# TODO: Run experiments outlined in HW3 PDF
+# Non-Kernelized
 # num_epoch = 20
 # w0 = np.zeros((XTrain.shape[1]))
 # w = perceptron.perceptron_train(w0, XTrain, yTrain, num_epoch)
@@ -35,6 +29,7 @@ yTest = np.genfromtxt(os.path.join(data_dir, 'yTest.csv'), delimiter=',')
 # test_error = np.sum(y != yTest)/y.shape[0]*100
 # print("Test error:", test_error)
 
+# Kernelized
 num_epoch = 20
 sigmas = [100,200]
 a0 = np.zeros((yTrain.shape[0]))

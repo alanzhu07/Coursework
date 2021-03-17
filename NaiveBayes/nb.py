@@ -79,18 +79,7 @@ if __name__ == '__main__':
     # You may want to convert XTrain / XTest from a sparse matrix to a dense matrix
     XTrain, XTest = XTrain.todense(), XTest.todense()
     
-    # D = NB_XGivenY(XTrain, yTrain)
-    # p = NB_YPrior(yTrain)
-
-    # yHatTrain = NB_Classify(D, p, XTrain)
-    # yHatTest = NB_Classify(D, p, XTest)
-
-    # trainError = ClassificationError(yHatTrain, yTrain)
-    # testError = ClassificationError(yHatTest, yTest)
-
-    # print("Training error:", trainError)
-    # print("Test error:", testError)
-
+    # Test different training size and their training/testing errors
     ms = np.arange(100,610,30)
     m_count = ms.shape[0]
     XTrains = [XTrain[:m,] for m in ms]
@@ -109,15 +98,6 @@ if __name__ == '__main__':
         trainErrors[i] = ClassificationError(yHatTrain, yTrains[i])
         testErrors[i] = ClassificationError(yHatTest, yTest)
         print("done {} out of {}".format(i+1, m_count))
-
-    # Ds = [NB_XGivenY(XTrains[i], yTrains[i]) for i in range(m_count)]
-    # ps = [NB_YPrior(yTrains[i]) for i in range(m_count)]
-
-    # yHatTrains = [NB_Classify(Ds[i], ps[i], XTrains[i]) for i in range(m_count)]
-    # yHatTests = [NB_Classify(Ds[i], ps[i], XTest) for i in range(m_count)]
-
-    # trainErrors = [ClassificationError(yHatTrain[i], yTrains[i]) for i in range(m_count)]
-    # testError = [ClassificationError(yHatTests[i], yTest) for i in range(m_count)]
 
     plt.plot(ms, trainErrors)
     plt.plot(ms, testErrors)

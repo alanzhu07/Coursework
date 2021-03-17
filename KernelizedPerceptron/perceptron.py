@@ -13,9 +13,6 @@ def perceptron_predict(w, x):
   # Output:
   #   the predicted label for x, scalar -1 or 1
 
-  #----------------------------------------------------------------------------------------------
-  # Special notes: You may use this function to answer Question 6.
-  #---------------------------------------------------------------------------------------------
   _temp = w.dot(x)
   if _temp <= 0:
     return -1
@@ -32,9 +29,6 @@ def perceptron_train(w0, XTrain, yTrain, num_epoch):
   # Output:
   #   the trained weight vector, (d,), 1-d array
 
-  #----------------------------------------------------------------------------------------------
-  # Special notes: You may use this function to answer Question 6.
-  #---------------------------------------------------------------------------------------------
   n = XTrain.shape[0]
   w = w0
   for k in range(num_epoch):
@@ -53,13 +47,6 @@ def RBF_kernel(X1, X2, sigma):
   # Output:
   #   K is a kernel matrix (n,m), 2-d array
 
-  #----------------------------------------------------------------------------------------------
-  # Special notes: numpy will automatically convert one column/row of a 2d array to 1d array
-  #                which is  unexpected in the implementation
-  #                make sure you always return a 2-d array even n = 1 or m = 1
-  #                your implementation should work when X1, X2 are either 2d array or 1d array
-  #                we provide you with some starter codes to make your life easier
-  #---------------------------------------------------------------------------------------------
   if len(X1.shape) == 2:
     n = X1.shape[0]
   else:
@@ -90,6 +77,7 @@ def kernel_perceptron_predict(a, XTrain, yTrain, x, sigma):
   #   sigma is the parameter $\sigma$ in RBF function, scalar
   # Output:
   #   the predicted label for x, scalar -1 or 1
+
   x = np.reshape(x, (1, x.shape[0]))
   a = np.reshape(a, (1, a.shape[0]))
   yTrain = np.reshape(yTrain, (1, yTrain.shape[0]))
@@ -105,6 +93,7 @@ def kernel_perceptron_train(a0, XTrain, yTrain, num_epoch, sigma):
   #   sigma is the parameter $\sigma$ in RBF function, scalar
   # Output:
   #   the trained counting vector, (n,), 1-d array
+  
   a = a0
   n = a0.shape[0]
   for k in range(num_epoch):
