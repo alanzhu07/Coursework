@@ -1,4 +1,3 @@
-### YOUR CODE HERE
 import neural_network as NN
 import matplotlib.pyplot as plt
 import numpy as np
