@@ -1,0 +1,161 @@
+{
+    "SingleLayer": [
+        {
+            "hidden": 50,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 150
+        },
+        {
+            "hidden": 50,
+            "momentum": 0.4,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 150
+        },
+        {
+            "hidden": 50,
+            "momentum": 0.4,
+            "dropout": 0.2,
+            "lr": 1e-3,
+            "epochs": 150
+        },
+        {
+            "hidden": 120,
+            "momentum": 0.4,
+            "dropout": 0.2,
+            "lr": 1e-3,
+            "epochs": 150
+        }
+    ],
+    "TwoLayers": [
+        {
+            "hidden": 50,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 150
+        },
+        {
+            "hidden": 50,
+            "momentum": 0.4,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 150
+        },
+        {
+            "hidden": 50,
+            "momentum": 0.4,
+            "dropout": 0.2,
+            "lr": 1e-3,
+            "epochs": 150
+        },
+        {
+            "hidden": 120,
+            "momentum": 0.4,
+            "dropout": 0.2,
+            "lr": 1e-3,
+            "epochs": 150
+        }
+    ],
+    "LearningRate": [
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-2,
+            "epochs": 150
+        },
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 150
+        },
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-4,
+            "epochs": 150
+        }
+    ],
+    "Momentum": [
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        },
+        {
+            "hidden": 120,
+            "momentum": 0.4,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        },
+        {
+            "hidden": 120,
+            "momentum": 0.6,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        }
+    ],
+    "Dropout": [
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        },
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0.2,
+            "lr": 1e-3,
+            "epochs": 250
+        },
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0.4,
+            "lr": 1e-3,
+            "epochs": 250
+        }
+    ],
+    "NumHidden": [
+        {
+            "hidden": 30,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        },
+        {
+            "hidden": 60,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        },
+        {
+            "hidden": 120,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        },
+        {
+            "hidden": 240,
+            "momentum": 0,
+            "dropout": 0,
+            "lr": 1e-3,
+            "epochs": 250
+        }
+    ]
+}
