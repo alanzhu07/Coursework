@@ -1,1 +1,1 @@
-Coursework for Intro to Machine Learning (10-315), Natural Language Processing (11-411), and Computer Vision (16-385) at CMU.
+Coursework for Intro to Machine Learning (10-315), Intermediate Deep Learning (10-617), Natural Language Processing (11-411), and Computer Vision (16-385) at CMU.
